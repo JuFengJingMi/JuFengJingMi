@@ -1,0 +1,667 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>东莞市巨峰精密设备有限公司</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 40px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+	.img-circle {
+		width: 240px;
+	}
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 10px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -10px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="./ico/favicon.png">
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar">
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-fixed-top">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">东莞市巨峰精密设备有限公司</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#about">公司简介</a></li>
+                <li><a href="#equipments">设备概览</a></li>
+                <li><a href="#products">产品图锦</a></li>
+                <li><a href="#contact">联系我们</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+      <hr id="about" class="featurette-divider">
+	  <div class="container marketing">
+	      <div class="row">
+	        <div class="span3">
+	          <h2 class="featurette-heading">公司简介</h2>
+			  <img src="./img/about1.png" >
+	        </div>
+	        <div class="span9">
+	          	<p><strong>东莞市巨峰精密设备有限公司是一家私营企业成立于2015年。</strong></p>
+				<p><strong>主要业务范围：精密机械设备，标准自动化设备，非标自动设备（自动化生产线，自动装配，自动印刷，自动测试检测，自动包装，注塑机边自动化设备），高精密切水口夹具，检测夹具，机械设备的技术开发及销售；喷涂线，电镀线，氧化线，隧道炉，烤箱，流水线，废气废水处理设备；国内贸易。</strong></p>
+				<p><strong>公司自成立以来，公司始终坚持“以人为本、持续创新、优质快捷、客户至上”的品质方针，分批引进高速CNC数控设备、三维测量仪、高度仪等先进的加工及精密检测设备，为公司的发展奠定了坚实的硬件基础；同时公司也汇聚了大批高端研发、制造和具高瞻视野的管理人才，使公司具有了优秀的软实力；公司拥有11项自动化设备专利，为客户提供高品质高实用性设备打下坚实基础。
+				</strong></p>
+				<p><strong>智造2025，我们与你同行，公司主要机器人品牌ABB,FUNCK,YAMAHA,UR（协作机器人）华数，伯朗特。</strong></p>
+				<p><strong>公司在职全体员工23人，机械工程师3人，电气工程师2人，资深技术人员15人，业务人员5人，文员1人。</strong></p>
+				<p><strong>公司宗旨：优秀的品质，快速的响应，强大的工程设计，为客户节省人力，提高生产效率。</strong></p>
+				<p><strong>智基（东莞）五金电器有限公司（独立子公司）2019年成立，主要业务为五金电器生产加工以及贸易。</strong></p>
+				<p>&nbsp;</p>
+				<p><strong>地址:东莞市虎门镇路东社区长青三路6号</strong></p>
+				<p><strong>地址:东莞市长安镇霄边大街16号</strong></p>
+				<p><strong>联系人：陈生13510027791  蒋生18581088088</strong></p>
+				<p><strong>邮箱：jufengjingmi@163.COM</strong></p>
+				<img src="./img/about2.png" >
+				<br>
+				<img src="./img/about3.png" >
+				<br>
+				<img src="./img/about4.png" >
+				<br>
+				<img src="./img/about5.png" >
+	        </div>
+	      </div><!-- /.row -->
+      </div>
+      
+      <hr id="equipments" class="featurette-divider">
+	  <div class="container marketing">
+	      <div class="row">
+	        <div class="span9">
+
+			</div>
+	        <div class="span3">
+	          <h2 class="featurette-heading"><strong>设备概览</strong></h2>
+	        </div>
+	      </div><!-- /.row -->
+      </div>
+      
+      <hr id="products" class="featurette-divider">
+	  <div class="container marketing">
+	      <div class="row">
+	        <div class="span3">
+	          <h2 class="featurette-heading"><strong>产品图锦</strong></h2>
+	        </div>
+			<div class="span9">
+	          					<section class="download" id="components">
+					<div class="download-builder">
+						<!-- Jssor Slider Begin -->
+						<!-- To move inline styles to css file/block, please specify a class name for each element. --> 
+						<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 1010px; height: 600px; background: #000; overflow: hidden; ">
+
+							<!-- Loading Screen -->
+							<div u="loading" style="position: absolute; top: 0px; left: 0px;">
+								<div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+									background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
+								</div>
+								<div style="position: absolute; display: block; background: url(./img/loading.gif) no-repeat center center;
+									top: 0px; left: 0px;width: 100%;height:100%;">
+								</div>
+							</div>
+
+							<!-- Slides Container -->
+							<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 600px;
+								overflow: hidden;">
+								<div>
+									<img u="image" src="./img/photography/1.jpeg" />
+									<div u="thumb">
+										<img class="i" src="./img/photography/thumb-1.jpeg" /><div class="t">国际小包</div>
+										<!--<div class="c">介绍文字</div>-->
+									</div>
+								</div>
+								<div>
+									<img u="image" src="./img/photography/2.jpeg" />
+									<div u="thumb">
+										<img class="i" src="./img/photography/thumb-2.jpeg" /><div class="t">存储打包</div>
+										<!--<div class="c">介绍文字</div>-->
+									</div>
+								</div>
+								<div>
+									<img u="image" src="./img/photography/3.jpeg" />
+									<div u="thumb">
+										<img class="i" src="./img/photography/thumb-3.jpeg" /><div class="t">货代收货</div>
+										<!--<div class="c">介绍文字</div>-->
+									</div>
+								</div>
+								<div>
+									<img u="image" src="./img/photography/4.jpeg" />
+									<div u="thumb">
+										<img class="i" src="./img/photography/thumb-4.jpeg" /><div class="t">物料充足</div>
+										<!--<div class="c">介绍文字</div>-->
+									</div>
+								</div>
+								<div>
+									<img u="image" src="./img/photography/5.jpeg" />
+									<div u="thumb">
+										<img class="i" src="./img/photography/thumb-5.jpeg" /><div class="t">快递签收</div>
+										<!--<div class="c">介绍文字</div>-->
+									</div>
+								</div>
+								<div>
+									<img u="image" src="./img/photography/6.jpeg" />
+									<div u="thumb">
+										<img class="i" src="./img/photography/thumb-6.jpeg" /><div class="t">物料齐全</div>
+										<!--<div class="c">介绍文字</div>-->
+									</div>
+								</div>
+								<div>
+									<img u="image" src="./img/photography/7.jpeg" />
+									<div u="thumb">
+										<img class="i" src="./img/photography/thumb-7.jpeg" /><div class="t">专线打包</div>
+										<!--<div class="c">介绍文字</div>-->
+									</div>
+								</div>
+								<div>
+									<img u="image" src="./img/photography/8.jpeg" />
+									<div u="thumb">
+										<img class="i" src="./img/photography/thumb-8.jpeg" /><div class="t">产品质检</div>
+										<!--<div class="c">介绍文字</div>-->
+									</div>
+								</div>
+								<div>
+									<img u="image" src="./img/photography/9.jpeg" />
+									<div u="thumb">
+										<img class="i" src="./img/photography/thumb-9.jpeg" /><div class="t">专线打包</div>
+										<!--<div class="c">介绍文字</div>-->
+									</div>
+								</div>
+							</div>
+							
+							<!--#region ThumbnailNavigator Skin Begin -->
+							<style>
+								/* jssor slider thumbnail navigator skin 11 css */
+								/*
+									.jssort11 .p            (normal)
+									.jssort11 .p:hover      (normal mouseover)
+									.jssort11 .pav          (active)
+									.jssort11 .pav:hover    (active mouseover)
+									.jssort11 .pdn          (mousedown)
+									*/
+								.jssort11 {
+									position: absolute;
+									width: 200px;
+									height: 600px;
+									font-family: 微软雅黑,Arial, Helvetica, sans-serif;
+									-moz-user-select: none;
+									-webkit-user-select: none;
+									-ms-user-select: none;
+									user-select: none;
+								}
+
+									.jssort11 .p {
+										position: absolute;
+										width: 200px;
+										height: 69px;
+										background: #181818;
+									}
+
+									.jssort11 .tp {
+										position: absolute;
+										top: 0;
+										left: 0;
+										width: 100%;
+										height: 100%;
+										border: none;
+									}
+
+									.jssort11 .i, .jssort11 .pav:hover .i {
+										position: absolute;
+										top: 3px;
+										left: 3px;
+										width: 80px;
+										height: 60px;
+										border: white 1px dashed;
+									}
+
+									* html .jssort11 .i {
+										width /**/: 62px;
+										height /**/: 32px;
+									}
+
+									.jssort11 .pav .i {
+										border: white 1px solid;
+									}
+
+									.jssort11 .t, .jssort11 .pav:hover .t {
+										position: absolute;
+										top: 3px;
+										left: 68px;
+										width: 129px;
+										height: 32px;
+										line-height: 32px;
+										text-align: center;
+										color: #fc9835;
+										font-size: 16px;
+										font-weight: 700;
+									}
+
+									.jssort11 .pav .t, .jssort11 .p:hover .t {
+										color: #fff;
+									}
+
+									.jssort11 .c, .jssort11 .pav:hover .c {
+										position: absolute;
+										top: 38px;
+										left: 3px;
+										width: 197px;
+										height: 31px;
+										line-height: 31px;
+										color: #fff;
+										font-size: 11px;
+										font-weight: 400;
+										overflow: hidden;
+									}
+
+									.jssort11 .pav .c, .jssort11 .p:hover .c {
+										color: #fc9835;
+									}
+
+									.jssort11 .t, .jssort11 .c {
+										transition: color 2s;
+										-moz-transition: color 2s;
+										-webkit-transition: color 2s;
+										-o-transition: color 2s;
+									}
+
+									.jssort11 .p:hover .t, .jssort11 .pav:hover .t, .jssort11 .p:hover .c, .jssort11 .pav:hover .c {
+										transition: none;
+										-moz-transition: none;
+										-webkit-transition: none;
+										-o-transition: none;
+									}
+
+									.jssort11 .p:hover, .jssort11 .pav:hover {
+										background: #333;
+									}
+
+									.jssort11 .pav, .jssort11 .p.pdn {
+										background: #462300;
+									}
+							</style>
+							<div u="thumbnavigator" class="jssort11" style="left: 805px; top:0px;">
+								<!-- Thumbnail Item Skin Begin -->
+								<div u="slides" style="cursor: default;">
+									<div u="prototype" class="p" style="top: 0; left: 0;">
+										<div u="thumbnailtemplate" class="tp"></div>
+									</div>
+								</div>
+								<!-- Thumbnail Item Skin End -->
+							</div>
+							<!--#endregion ThumbnailNavigator Skin End -->
+						</div>
+						<!-- Jssor Slider End -->
+
+					</div><!-- /row -->
+				  </section>
+	        </div>
+	      </div><!-- /.row -->
+      </div>
+      
+	  <hr id="contact" class="featurette-divider">
+      <div class="container marketing">
+	      <div class="row">
+	        <div class="span3">
+	          <h2 class="featurette-heading"><strong>联系我们</strong></h2>
+	        </div>
+	        <div class="span9">
+				<p><strong>地址:东莞市虎门镇路东社区长青三路6号</strong></p>
+				<p><strong>地址:东莞市长安镇霄边大街16号</strong></p>
+				<p><strong>联系人：陈生13510027791  蒋生18581088088</strong></p>
+				<p><strong>邮箱：jufengjingmi@163.COM</strong></p>
+	        </div>
+	      </div><!-- /.row -->
+      </div>
+      <!-- /END THE FEATURETTES -->
+
+	  <hr>
+      <!-- FOOTER -->
+      <footer class="text-center">
+        <p class="pull-right"><a href="#">返回顶部</a></strong></p>
+        <p><strong>&copy; 2015 JuFengJingMi Inc. All Rights Reserved. 东莞市巨峰精密设备有限公司 版权所有</strong></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+	
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+	<script src="./js/jssor.slider.min.js"></script>
+	<script>
+        jQuery(document).ready(function ($) {
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+                $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+                $Loop: 0,                                       //[Optional] Enable loop(circular) of carousel or not, 0: stop, 1: loop, 2 rewind, default value is 1
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 5, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $ThumbnailNavigatorOptions: {
+                    $Class: $JssorThumbnailNavigator$,              //[Required] Class to create thumbnail navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+
+                    $Loop: 2,                                       //[Optional] Enable loop(circular) of carousel or not, 0: stop, 1: loop, 2 rewind, default value is 1
+                    $AutoCenter: 3,                                 //[Optional] Auto center thumbnail items in the thumbnail navigator container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 3
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange thumbnails, default value is 1
+                    $SpacingX: 4,                                   //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
+                    $SpacingY: 4,                                   //[Optional] Vertical space between each thumbnail in pixel, default value is 0
+                    $DisplayPieces: 8,                              //[Optional] Number of pieces to display, default value is 1
+                    $ParkingPosition: 0,                            //[Optional] The offset position to park thumbnail
+                    $Orientation: 2,                                //[Optional] Orientation to arrange thumbnails, 1 horizental, 2 vertical, default value is 1
+                    $DisableDrag: false                             //[Optional] Disable drag or not, default value is false
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth) {
+                    var sliderWidth = parentWidth;
+
+                    //keep the slider width no more than 810
+                    sliderWidth = Math.min(sliderWidth, 1010);
+
+                    jssor_slider1.$ScaleWidth(sliderWidth);
+                }
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+  </body>
+</html>
